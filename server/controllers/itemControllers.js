@@ -36,7 +36,7 @@ const updateItem = async (req, res) => {
 //delete an item
 
 const deleteItem = async (req, res) => {
-  const removeItem = await Item.findByIdAndDelete({ _id: req.body.id });
+  const removeItem = await Item.findByIdAndDelete({ _id: req.params.id });
   res.json({ success: true });
 };
 
