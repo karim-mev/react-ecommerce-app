@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import registerUser from "../axios/auth";
+import {registerUser} from "../axios/auth";
 import "../css/register.css";
 
 const RegisterForm = () => {

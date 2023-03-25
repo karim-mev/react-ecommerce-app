@@ -1,4 +1,3 @@
-import axios from "axios";
 import api from "./api";
 
 const registerUser = async (name, email, password) => {
@@ -37,4 +36,4 @@ const loginUser = async (email, password) => {
   }
 };
 
-export default {registerUser, loginUser};
+export {registerUser, loginUser};
