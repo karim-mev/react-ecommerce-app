@@ -1,5 +1,5 @@
 const Cart = require("../models/Cart");
-const Item = require("../models/Item");
+const Item = require("../models/Product");
 
 //get cart items for the user
 
@@ -63,6 +63,8 @@ const addCart = async (req, res) => {
   }
 };
 
+//delete a cart item
+
 const deleteCart = async (req, res) => {
   const userId = req.params.userId;
   const productId = req.params.itemId;
@@ -84,4 +86,6 @@ const deleteCart = async (req, res) => {
 
 module.exports = {
   getCart,
+  addCart,
+  deleteCart,
 };
