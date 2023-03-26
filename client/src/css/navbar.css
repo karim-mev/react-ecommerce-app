@@ -1,0 +1,44 @@
+.navbar {
+    display: flex;
+    border-bottom: 0.1rem solid white;
+    align-items: center;
+    padding: 1.5rem 3rem;
+}
+
+.navbar h2 {
+    flex: 1;
+}
+
+.nav-items {
+    display: flex;
+    gap: 2rem;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-items li a:hover {
+    position: relative;
+    color: rgb(190, 139, 202);
+    /* border-bottom: 0.1rem solid rgb(190, 139, 202); */
+}
+
+.nav-items li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(190, 139, 202);
+    transition: 0.4s ease;
+}
+
+.nav-items li a:hover::before {
+    width: 100%;
+}
+
+.left-nav {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}

@@ -1,15 +1,18 @@
 import React, { useState } from "react";
-import {loginUser} from "../axios/auth";
+import { loginUser } from "../axios/auth";
+import { useNavigate } from "react-router-dom";
 import "../css/register.css";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
       const userData = await loginUser(email, password);
+      navigate("/");
       console.log(userData);
     } catch (error) {
       if (error.response && error.response.data && error.response.data.error) {

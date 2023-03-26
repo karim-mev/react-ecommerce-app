@@ -17,7 +17,15 @@
     gap: 0.1rem;
 }
 
+.form label {
+    /* color: rgb(174, 154, 225); */
+    /* color: black; */
+    color: rgb(205, 199, 216);
+}
+
 .form input {
+    background-color: rgb(174, 154, 225);
+    color: rgb(102, 99, 109);
     border-radius: 0.5rem;
     border: none;
     width: 15rem;
@@ -32,6 +40,7 @@
 
 .form button {
     background-color: transparent;
+    color: rgb(205, 199, 216);
     outline: none;
     border: 0.1rem solid rgb(174, 154, 225);
     border-radius: 0.5rem;
@@ -42,5 +51,4 @@
 .form button:hover {
     cursor: pointer;
     background-color: rgb(174, 154, 225);
-    color: white;
 }
